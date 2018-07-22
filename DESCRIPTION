@@ -1,20 +1,22 @@
-Package: research-01
-Title: Reproducible Research in R, Lesson 1 - Introduction to RStudio and R
-    Projects
+Package: research-02
+Title: Reproducible Research in R, Lesson 2 - Reading and Writing Data
 Version: 0.2.0.9000
 Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
                   role = c("aut", "cre"))
-Description: This repository contains the initial lesson for the Reproducible
-    Research in R seminar. This lesson covers the basics of using RStudio
-    as a GUI for R as well as the .Rproj file format used by RStudio for
-    managing the working directory.
+Description: This repository contains the second lesson for the Reproducible
+    Research in R seminar. This lesson covers the basics of using a variety
+    of tidyverse packages for data import, including readr, readxl, and haven.
+    Writing clean data to csv is also covered.
 Depends: R (>= 3.3)
 License: CC-BY-SA-4.0 + LICENSE
 Web: https://slu-dss.github.io
-URL: https://github.com/slu-dss/research-01
-BugReports: https://github.com/slu-dss/research-01/issues
+URL: https://github.com/slu-dss/research-02
+BugReports: https://github.com/slu-dss/research-02/issues
 Imports:
+    haven,
     here,
     knitr,
+    readr,
+    readxl,
     rmarkdown,
     usethis
