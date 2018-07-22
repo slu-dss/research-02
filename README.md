@@ -1,4 +1,4 @@
-# research-01 <img src="/img/logo.png" align="right" />
+# research-02 <img src="/img/logo.png" align="right" />
 [![](https://img.shields.io/badge/seminar-reproducible%20research%20in%20r-brightgreen.svg)](https://github.com/slu-dss/research-02/)
 [![](https://img.shields.io/badge/lesson%20status-under%20development-red.svg)](https://github.com/slu-dss/research-02/)
 [![](https://img.shields.io/github/release/slu-dss/research-02.svg?label=version)](https://github.com/slu-dss/research-02/releases)
