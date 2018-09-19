@@ -15,6 +15,24 @@ At the end of this lesson, participants should be able to:
 2.
 3.
 
+### Lesson Quick Start
+#### Install Necessary Packages
+You can copy and paste this syntax into your console:
+
+```r
+install.packages(c("tidyverse", "here", "knitr", "rmarkdown"))
+```
+
+#### Download Lesson Materials
+You can download this lesson to your Desktop easily using `usethis`:
+
+```r
+usethis::use_course("https://github.com/slu-dss/research-02/archive/master.zip")
+```
+
+By using `usethis::use_course`, all of the lesson materials will be downloaded to your computer, automatically extracted, and saved to your desktop. You can then open the `.Rproj` file to get started.
+
+
 ### Lesson Resources
 * The [`SETUP.md`](/references/SETUP.md) file in the [`references/`](/references) directory contains a list of packages required for this lesson
 * The [`notebook/`](/notebook) directory contains...
@@ -23,15 +41,6 @@ At the end of this lesson, participants should be able to:
 
 ### Extra Resources
 
-
-## Access Lesson
-You can download this lesson to your Desktop easily using `usethis`:
-
-```r
-usethis::use_course("https://github.com/slu-dss/research-02/archive/master.zip")
-```
-
-By using `usethis::use_course`, all of the lesson materials will be downloaded to your computer, automatically extracted, and saved to your desktop. You can then open the `.Rproj` file to get started.
 
 ## Contributor Code of Conduct
 Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
