@@ -1,0 +1,179 @@
+---
+title: "Reproducible Research in `R`"
+subtitle: "Lesson 2: Reading and Writing Data"
+author: "Christy Garcia and Chris Prener"
+date: "September 19, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Getting Started
+
+1. Go to https://github.com/slu-dss/research-02/
+
+2. Scroll down to "Lesson Quick Start"
+
+3. Copy and paste the `install.packages()` function into your console and run
+
+4. Copy and paste the `usethis::use_course()` function into your console and run
+
+---
+
+# Upcoming Events
+
+### DSS 06: Reproducible Research in `R`
+
+* Session 03 - October 3rd
+* Session 04 - October 17th
+
+--
+
+### Other DSS Events
+
+* Open Science Meetup - October 5th
+* Brownbag, Power Analyses in `R` (South Campus) - October 31st
+* Brownbag, Using Python for Automating Routine Tasks - November 28th
+
+--
+
+### RLadies
+
+* Reproducible Research in `R` - October 3rd
+* Plotting something great: Making graphs in `R` - November 14th
+
+---
+
+# Quick Review
+
+1. `R` stores information in *objects* that are saved in your *enviornment*
+
+2. All objects have *names*:
+
+    * names should not have spaces or wonky special characters
+    
+    * names should be short and descriptive
+    
+    * names should use either `dot.case`, `snake_case`, or `camelCase`
+    
+3. We assign data to objects with the assignment operator: `df <- data`
+
+4. We interact with `R` using *functions*
+
+5. Functions typically take one or more *arguments* as input
+
+6. Functions can be *nested* within other functions
+
+---
+
+# File Paths
+
+Every file on your computer has an "address" that locates it:
+
+`/Users/chris/Documents/DSS/research-02/README.md`
+
+`C:\Users\chris\Documents\DSS\research-02\README.md`
+
+--
+
+### Three problems
+
+1. We are so used to using Windows File Explorer and macOS Finder to find files, or searching, that constructing valid file paths is no longer a typical skill for the median user. *File paths are a lost art.*
+
+2. Depending on how elaborate your organizational structure is, this can consist of many different "layers" of folders. *File paths are a pain to type.*
+
+3. File paths are typically specific to a user, so if our notebooks used hard-coded file paths and we gave the files to a colleague to execute, they would have to edit each file path call to match the specifics of their machines. *Fil paths limit reproducibility.*
+
+---
+
+# The Working Directory
+
+To solve the problems of file paths, we use "working directories" - a starting place that we can associate with relative paths.
+
+```r
+> getwd()
+[1] "/Users/chris/Documents/DSS/research-02"
+```
+
+--
+
+Once we have a working directory set, we can instruct `R` using relative file paths:
+
+```r
+df <- readr::read_csv(file = "data.csv")
+```
+
+`R` will assume that the file `data.csv` sits within 
+
+`/Users/chris/Documents/DSS/research-02`.
+
+---
+
+# The Working Directory
+
+To solve the problems of file paths, we use "working directories" - a starting place that we can associate with relative paths.
+
+```r
+> getwd()
+[1] "/Users/chris/Documents/DSS/research-02"
+```
+
+Once we have a working directory set, we can instruct `R` using relative file paths:
+
+```r
+df <- readr::read_csv(file = "data/data.csv")
+```
+
+`R` will assume that the file `data.csv` sits within 
+
+`/Users/chris/Documents/DSS/research-02/data`.
+
+---
+
+# Setting the Working Directory Dynamically
+
+To ensure that `R` code executes in *any* given environment without having to manually enter the working directory, we will use two tools:
+
+1. `R` projects (e.g. `research-02.Rproj`)
+2. The `here` package and its `here()` function
+
+--
+
+### R projects
+`R` projects, when utilized with RStudio, automatically set the working directory to the directory where the `.Rproj` file is located. 
+
+If the following exists:
+
+`/Users/chris/Documents/DSS/research-02/research-02.Rproj`
+
+then
+
+`/Users/chris/Documents/DSS/research-02`
+
+is the working directory.
+
+---
+
+# Setting the Working Directory Dynamically
+
+To ensure that `R` code executes in *any* given environment without having to manually enter the working directory, we will use two tools:
+
+1. `R` projects (e.g. `research-02.Rproj`)
+2. The `here` package and its `here()` function
+
+### here
+The `here` package allows us to both read and write to *subdirectories* of our working directory cleanly:
+
+If we are using a `.Rproj` *and* the following exists:
+
+`/Users/chris/Documents/DSS/research-02/data/data.csv`
+
+then we will write:
+
+```r
+df <- readr::read_csv(file = here("data", "data.csv"))
+```
