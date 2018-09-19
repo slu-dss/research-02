@@ -20,3 +20,5 @@ Imports:
     readxl,
     rmarkdown,
     usethis
+    xaringan
+    

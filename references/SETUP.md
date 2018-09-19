@@ -4,6 +4,8 @@ The following packages are required for this lesson.
 ### `tidyverse` Packages from CRAN
 This lesson requires a number of [`tidyverse`](https://www.tidyverse.org) packages:
 
+- [`dplyr`](https://dplyr.tidyverse.org)
+- [`ggplot2`](https://ggplot2.tidyverse.org)
 - [`haven`](https://haven.tidyverse.org)
 - [`readr`](http://readr.tidyverse.org)
 - [`readxl`](https://readxl.tidyverse.org)
@@ -16,3 +18,7 @@ install.packages("tidyverse")
 
 ### Other Packages from CRAN
 This lesson requires the following `R` packages from CRAN:
+
+- `knitr`
+- `rmarkdown`
+- `usethis`

@@ -1,6 +1,6 @@
 # research-02 <img src="/img/logo.png" align="right" />
 [![](https://img.shields.io/badge/seminar-reproducible%20research%20in%20r-brightgreen.svg)](https://github.com/slu-dss/research-02/)
-[![](https://img.shields.io/badge/lesson%20status-under%20development-red.svg)](https://github.com/slu-dss/research-02/)
+[![](https://img.shields.io/badge/lesson%20status-stable-brightgreen.svg)](https://github.com/slu-dss/research-02/)
 [![](https://img.shields.io/github/release/slu-dss/research-02.svg?label=version)](https://github.com/slu-dss/research-02/releases)
 [![](https://img.shields.io/github/last-commit/slu-dss/research-02.svg)](https://github.com/slu-dss/research-02/commits/master)
 [![Travis-CI Build Status](https://travis-ci.org/slu-dss/research-02.svg?branch=master)](https://travis-ci.org/slu-dss/research-02)
@@ -11,9 +11,9 @@
 ### Objectives
 At the end of this lesson, participants should be able to:
 
-1.
-2.
-3.
+1. Construct file paths in `R` in a way that ensures maximum reproducibility.
+2. Construct data frames from a variety of raw data sources including `.rda`, `.csv`, various statistical package data sets, and Excel workbooks.
+3. Identy common issues with Excel workbooks and modify their input into `R` to address these issues.
 
 ### Lesson Quick Start
 #### Install Necessary Packages
@@ -39,7 +39,10 @@ By using `usethis::use_course`, all of the lesson materials will be downloaded t
 * The [`references/`](/references) directory also contains other notes on changes to the repository, key topics, terms, data sources, and software.
 
 ### Extra Resources
-
+* [the `tidyverse` website](http://tidyverse.org)
+* [the `readr` website](http://readr.tidyverse.org)
+* [the `haven` website](http://haven.tidyverse.org)
+* [the `readxl` website](http://readxl.tidyverse.org)
 
 ## Contributor Code of Conduct
 Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
