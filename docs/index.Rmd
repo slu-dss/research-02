@@ -136,7 +136,7 @@ df <- readr::read_csv(file = "data/data.csv")
 
 # Setting the Working Directory Dynamically
 
-To ensure that `R` code executes in *any* given enviornment without having to manually enter the working directory, we will use two tools:
+To ensure that `R` code executes in *any* given environment without having to manually enter the working directory, we will use two tools:
 
 1. `R` projects (e.g. `research-02.Rproj`)
 2. The `here` package and its `here()` function
@@ -160,7 +160,7 @@ is the working directory.
 
 # Setting the Working Directory Dynamically
 
-To ensure that `R` code executes in *any* given enviornment without having to manually enter the working directory, we will use two tools:
+To ensure that `R` code executes in *any* given environment without having to manually enter the working directory, we will use two tools:
 
 1. `R` projects (e.g. `research-02.Rproj`)
 2. The `here` package and its `here()` function
