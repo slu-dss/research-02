@@ -1,0 +1,39 @@
+---
+title: "Reproducible Research in R, Lesson 1"
+author: "Christy Garcia, Ph.D. and Christopher Prener, Ph.D."
+date: '(`r format(Sys.time(), "%B %d, %Y")`)'
+output:
+  github_document: default
+  html_notebook: default
+---
+
+## Introduction
+This is the notebook for the second session of the Reproducible Research in `R` DSS seminar. This notebook covers skills related to managing file paths and importing data from various sources.
+
+## Dependencies
+This notebook requires three packages from the `tidyverse` as well as an additional package:
+
+```{r load-packages}
+# tidyverse packages
+library(haven)     # read statistical data files
+library(readr)     # read flat files (csv, tsv)
+library(readxl)    # read excel files
+
+# manage file paths
+library(here)      # manage file paths
+```
+
+## Quick Review of Importing Objects
+Today, we're going to work with the `mpg` data from the `ggplot2` package. Lets start by reviewing a couple of basics:
+
+1. `R` stores information in *objects* that are saved in your *enviornment*
+2. All objects have *names*:
+    * names should not have spaces or wonky special characters
+    * names should be short and descriptive
+    * naming should use either `dot.case`, `snake_case`, `dash-case`, or `camelCase`
+3. We interact with `R` using *functions*
+4. Functions typically take one or more *arguments* as input
+5. Functions can be *nested* within other functions
+
+We're going to use some data that is originally drawn from 
+
