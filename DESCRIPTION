@@ -13,6 +13,8 @@ Web: https://slu-dss.github.io
 URL: https://github.com/slu-dss/research-02
 BugReports: https://github.com/slu-dss/research-02/issues
 Imports:
+    dplyr,
+    ggplot2,
     haven,
     here,
     knitr,
