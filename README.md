@@ -20,7 +20,7 @@ At the end of this lesson, participants should be able to:
 You can copy and paste this syntax into your console:
 
 ```r
-install.packages(c("tidyverse", "here", "knitr", "rmarkdown"))
+install.packages(c("tidyverse", "here", "knitr", "rmarkdown", "usethis"))
 ```
 
 #### Download Lesson Materials
@@ -31,7 +31,6 @@ usethis::use_course("https://github.com/slu-dss/research-02/archive/master.zip")
 ```
 
 By using `usethis::use_course`, all of the lesson materials will be downloaded to your computer, automatically extracted, and saved to your desktop. You can then open the `.Rproj` file to get started.
-
 
 ### Lesson Resources
 * The [`SETUP.md`](/references/SETUP.md) file in the [`references/`](/references) directory contains a list of packages required for this lesson
