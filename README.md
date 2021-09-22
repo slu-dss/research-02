@@ -13,7 +13,7 @@ At the end of this lesson, participants should be able to:
 
 1. Construct file paths in `R` in a way that ensures maximum reproducibility.
 2. Construct data frames from a variety of raw data sources including `.rda`, `.csv`, various statistical package data sets, and Excel workbooks.
-3. Identy common issues with Excel workbooks and modify their input into `R` to address these issues.
+3. Identify common issues with Excel workbooks and modify their input into `R` to address these issues.
 
 ### Lesson Quick Start
 #### Install Necessary Packages
